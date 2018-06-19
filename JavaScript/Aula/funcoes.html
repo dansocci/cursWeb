@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FUNÇÕES</title>
+    <meta charset="utf-8">
+    
+    <style>
+        div{
+            background: #d6d6d6;
+            padding: 10px;
+            margin: 10px;
+            width: 97%;
+            border: 1px solid gray;
+            float: left;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <h2>Com Retorno</h2><br />
+        <script type="text/javascript">
+
+            function CalcularTerreno(largura, comprimento){
+                largura = parseFloat(largura);
+                comprimento = parseFloat(comprimento);
+                var area = largura * comprimento;
+
+                return area;
+            }
+            
+            var areaTerreno = CalcularTerreno(10, 20);
+            document.write("O Terreno possui " + areaTerreno + "metros quadrados.");
+
+        </script>
+    </div>
+
+    <div>
+        <h2>Sem Retorno</h2><br />
+        <script type="text/javascript">
+
+            function CalcularPerimetro(lado, aresta){
+                lado = parseFloat(lado);
+                aresta = parseFloat(aresta);
+                var perimetro = (2*lado) + (2*aresta);
+
+                document.write("O Terreno possui " + perimetro + " metros.");
+            }
+            
+            CalcularPerimetro(30, 50);
+            
+        </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* Limpar formatação padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+#navegacao{
+    background: white;
+    border-bottom: 1px solid #d8d8d8;
+    height: 45px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#area{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+#area-principal{
+    width: 1080px;
+    margin: 55px auto 10px auto;
+}
+
+#logo{
+    float: left;
+    padding: 2px 0;
+    font-size: 32px;
+    font-weight: bold;
+    background: none;
+}
+
+#menu{
+    float: right;
+    padding: 12px 0;
+}
+
+#postagem{
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #b9c941;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+a:link{
+    color: #838383;
+}
+
+a:visited{
+    color: #838383;
+}
+
+a:hover{
+    color: #fff;
+    background: #b9c941;
+    border-radius: 8px;
+}
+
+a:active{
+    color: #535353;
+}
+
+.verde{
+    color: #b9c941;
+}
+
+.cinza{
+    color: #535353;
+}
+
+.data-postagem{
+	font-size: 14px;
+	border-bottom: 1px solid #f4f4f4;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.texto-postagem{
+    min-height: 150px;
+}
+
+.img-postagem{
+    float: left;
+    margin: 0 15px 5px 0;
+    height: 150px;
+}
+
+.postado{
+    border-left: 5px solid #d8d8d8;
+    padding-left: 5px;
+    display: block;
+    margin-top: 10px; 
+}

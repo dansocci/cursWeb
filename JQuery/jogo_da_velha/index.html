@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<script src="jquery-2.2.1.js"></script>
+		<script src="jogo.js"></script>
+		<style>
+			#paginaInicial{
+				text-align: center;
+			}
+			#tabelaInicial{
+				width: 600px;
+				margin: auto;
+			}
+			#palcoJogo{
+				margin-top: 50px;
+				text-align: center;
+				display: none;
+			}
+			#gameOver{
+				text-align: center;
+				margin-top: 50px;
+				display: none;
+			}
+			input{
+				margin: 10px;
+				padding: 4px;
+			}
+			.gridJogo{
+				display: inline-block;
+
+			}
+			.campo{
+				width: 100px;
+				height: 100px;
+				border: 1px solid red;
+			}
+			.score{
+				font-size: 30px;
+				margin: auto;
+				width: 560px;;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="paginaInicial">
+			<table id="tabelaInicial">
+				<tbody>
+					<tr>
+						<td colspan="3"><h1>JOGO DA VELHA</h1></td>
+					</tr>
+					<tr>
+						<td>
+							<img src="imagens/jogador_1.png" />
+							<br />
+							<input id="apelidoJogador1" type="text" maxlength="10" placeholder="Jogador 1" />
+						</td>
+						<td>
+							<img id="btn-iniciar" src="imagens/iniciar.png" />
+						</td>
+						<td>
+							<img src="imagens/jogador_2.png" />
+							<br />
+							<input id="apelidoJogador2" type="text" maxlength="10" placeholder="Jogador 2" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="palcoJogo">
+			<div class="gridJogo">
+				<img src="imagens/jogador_1.png" id="selecao1"/>
+				<br />
+				<span class="nomeJogador1"></span>
+			</div>
+
+			<div class="gridJogo">
+
+				<table>
+					<tr>
+						<td>
+							<div id="a-1" class="campo"></div>
+						</td>
+						<td>
+							<div id="a-2" class="campo"></div>
+						</td>
+						<td>
+							<div id="a-3" class="campo"></div>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div id="b-1" class="campo"></div>	
+						</td>
+						<td>
+							<div id="b-2" class="campo"></div>
+						</td>
+						<td>
+							<div id="b-3" class="campo"></div>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div id="c-1" class="campo"></div>	
+						</td>
+						<td>
+							<div id="c-2" class="campo"></div>
+						</td>
+						<td>
+							<div id="c-3" class="campo"></div>	
+						</td>
+					</tr>
+				</table>
+
+			</div>
+
+			<div class="gridJogo">
+				<img src="imagens/jogador_2.png" id="selecao2" />
+				<br />
+				<span class="nomeJogador2"></span>
+			</div>
+			<div>
+				<table class="score">
+					<tr>
+						<td>
+							<span class="pontosJogador1"></span>
+						</td>
+						<td>
+							<span>VERSUS</span>
+						</td>
+						<td>
+							<span class="pontosJogador2"></span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div id="gameOver">
+			<table class="score">
+				<tbody>
+					<tr>
+						<td colspan="3"><span>JOGO DA VELHA</span></td>
+					</tr>
+					<tr>
+						<td>
+							<img src="imagens/jogador_1.png" />
+							<br />
+							<span class="nomeJogador1"></span>
+							<br />
+							<span class="pontosJogador1"></span>
+						</td>
+						<td>
+							<input id="btn-novaJogada" type="button" value="Nova Partida" />
+							<br />
+							<input id="btn-reiniciar" type="button" value="Reiniciar" />
+						</td>
+						<td>
+							<img src="imagens/jogador_2.png" />
+							<br />
+							<span class="nomeJogador2"></span>
+							<br />
+							<span class="pontosJogador2"></span>
+						</td>
+				</tbody>
+			</table>
+		</div>
+
+	</body>
+</html>
